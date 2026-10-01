@@ -357,17 +357,17 @@ function Calendar({
                   todayCell ? "border border-[#005293]" : ""
                 } ${current ? "cursor-pointer" : ""}`}
               >
-                <div className="relative size-[24px] flex items-center justify-center shrink-0">
-                  {todayCell && <img src={imgEllipse} alt="" className="absolute block inset-0 size-full" />}
-                  <span
-                    className={`text-[10px] text-center leading-[1.25] relative z-10 ${
-                      current ? (todayCell ? "text-white" : color) : "opacity-50 text-[#8a8a8a]"
-                    }`}
-                    style={{ fontFamily: current ? "'Noto Sans JP:Regular'" : "'Lato:Regular'" }}
-                  >
-                    {day}
-                  </span>
-                </div>
+              <div className="relative size-[24px] flex items-center justify-center shrink-0">
+                {todayCell && <div className="absolute inset-0 rounded-full bg-[#1e40af]" />}
+                <span
+                  className={`text-[10px] text-center leading-[1.25] relative z-10 ${
+                    current ? (todayCell ? "text-white" : color) : "opacity-50 text-[#8a8a8a]"
+                  }`}
+                  style={{ fontFamily: current ? "'Noto Sans JP:Regular'" : "'Lato:Regular'" }}
+                >
+                  {day}
+                </span>
+              </div>
 
                 {current && holiday && !work && (
                   <div className="bg-[#ffe1e1] flex items-center justify-center h-[14px] overflow-hidden rounded-[2px] w-full shrink-0">
