@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 
-const imgLogo = "/assets/450dd.png";
-const imgEllipse = "/assets/3ad7c.svg";
+const imgLogo = "assets/450dd.png";
+const imgEllipse = "assets/3ad7c.svg";
 
 // ────────────────────────────────────────────────────────────
 // Japanese holiday calculation
