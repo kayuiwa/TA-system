@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 
 const imgLogo = `${import.meta.env.BASE_URL}assets/450dd.png`;
-const imgLogo = `${import.meta.env.BASE_URL}assets/3ad7c.svg`;
+const imgLogoSvg = `${import.meta.env.BASE_URL}assets/3ad7c.svg`;
 
 // ────────────────────────────────────────────────────────────
 // Japanese holiday calculation
