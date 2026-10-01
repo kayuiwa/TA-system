@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 
-import imgLogo from './assets/450dd.png';
+import imgLogo from './assets/450dd.svg';
 import imgLogoSvg from './assets/3ad7c.svg';
 import imgChevronDown from './assets/chevron-down.svg';
 import imgChevronDown2 from './assets/chevron-down2.svg';
