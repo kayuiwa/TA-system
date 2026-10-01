@@ -1,0 +1,10 @@
+{
+  "description": "Manage work attendance efficiently with a mobile-friendly calendar that highlights holidays and allows easy registration and viewing of work hours by month.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

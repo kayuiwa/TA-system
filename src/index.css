@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "Font Awesome 6 Free:Solid";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://static.figma.com/font/Font%20Awesome%206%20Free-Solid-900_2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans JP:Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://static.figma.com/font/NotoSansJP-VF_2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans JP:Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://static.figma.com/font/NotoSansJP-VF_2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans JP:Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://static.figma.com/font/NotoSansJP-VF_2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans JP:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/NotoSansJP-VF_2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter:Semi Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato:Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://static.figma.com/font/Lato-Medium_1") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Lato-Regular_1") format("woff2");
+}
