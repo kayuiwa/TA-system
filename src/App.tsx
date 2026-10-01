@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 
-const imgLogo = "assets/450dd.png";
-const imgEllipse = "assets/3ad7c.svg";
+const imgLogo = `${import.meta.env.BASE_URL}assets/450dd.png`;
+const imgLogo = `${import.meta.env.BASE_URL}assets/3ad7c.svg`;
 
 // ────────────────────────────────────────────────────────────
 // Japanese holiday calculation
@@ -230,7 +230,7 @@ function SelectField({
         ))}
       </select>
       <img
-        src="/assets/chevron-down.svg"
+        src={`${import.meta.env.BASE_URL}assets/chevron-down.svg`}
         alt=""
         className="absolute right-[10px] top-1/2 -translate-y-1/2 size-[16px] pointer-events-none"
       />
@@ -791,7 +791,7 @@ function WorktimePatternDoneScreen({
               登録済み勤務時間 ({patterns.length}件)
             </span>
             <img
-              src="/assets/chevron-down2.svg"
+              src={`${import.meta.env.BASE_URL}assets/chevron-down2.svg`}
               alt=""
               className={`size-[20px] transition-transform ${open ? "rotate-180" : ""}`}
             />
@@ -986,7 +986,7 @@ function LeaveDoneScreen({ onMenu, navigate }: { onMenu: () => void; navigate: (
               申請済み一覧
             </span>
             <img
-              src="/assets/chevron-down2.svg"
+              src={`${import.meta.env.BASE_URL}assets/chevron-down2.svg`}
               alt=""
               className={`size-[20px] transition-transform ${open ? "rotate-180" : ""}`}
             />
