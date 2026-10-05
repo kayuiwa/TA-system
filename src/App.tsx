@@ -509,39 +509,37 @@ function LoginScreen({ onLogin }: { onLogin: () => void }) {
             ログイン
           </p>
         </div>
-        <div className="flex flex-col gap-[20px] w-full box-border">
-          /* ID入力エリア */
-          <div className="flex flex-col sm:flex-row sm:items-center gap-[8px] sm:gap-[16px] w-full">
-            <div className="flex items-center text-[16px] shrink-0" style={{ fontFamily: "'Noto Sans JP:Regular'" }}>
-              <span className="text-[#e80004] w-[8px]">*</span>
-              <span className="text-[#3d4b56] w-[8px] sm:w-[80px]">ID</span>
-            </div>
-            <input
-              type="text"
-              value={id}
-              onChange={(e) => setId(e.target.value)}
-              placeholder="IDの入力"
-              className="bg-white border border-[#e0e4eb] rounded-[6px] w-full sm:flex-1 px-[16px] py-[12px] text-[16px] text-[#3d4b56] placeholder-[#8a8a8a] min-w-0 box-border"
-              style={{ fontFamily: "'Noto Sans JP:Regular'" }}
-            />
-          </div>
+        <div className="flex flex-col gap-[24px] items-start w-full">
+  <div className="flex gap-[16px] items-center w-full">
+    <div className="flex items-center text-[16px] shrink-0" style={{ fontFamily: "'Noto Sans JP:Regular'" }}>
+      <span className="text-[#e80004] w-[8px]">*</span>
+      <span className="text-[#3d4b56] w-[80px]">ID</span>
+    </div>
+    <input
+      type="text"
+      value={id}
+      onChange={(e) => setId(e.target.value)}
+      placeholder="IDの入力"
+      className="bg-white border border-[#e0e4eb] rounded-[6px] flex-1 min-w-0 px-[16px] py-[12px] text-[16px] text-[#3d4b56] placeholder-[#8a8a8a]"
+      style={{ fontFamily: "'Noto Sans JP:Regular'" }}
+    />
+  </div>
 
-          /* パスワード入力エリア */
-          <div className="flex flex-col sm:flex-row sm:items-center gap-[8px] sm:gap-[16px] w-full">
-            <div className="flex items-center text-[16px] shrink-0" style={{ fontFamily: "'Noto Sans JP:Regular'" }}>
-              <span className="text-[#e80004] w-[8px]">*</span>
-              <span className="text-[#3d4b56] w-[8px] sm:w-[80px]">パスワード</span>
-            </div>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="パスワードの入力"
-              className="bg-white border border-[#e0e4eb] rounded-[6px] w-full sm:flex-1 px-[16px] py-[12px] text-[16px] text-[#3d4b56] placeholder-[#8a8a8a] min-w-0 box-border"
-              style={{ fontFamily: "'Noto Sans JP:Regular'" }}
-            />
-          </div>
-        </div>
+  <div className="flex gap-[16px] items-center w-full">
+    <div className="flex items-center text-[16px] shrink-0" style={{ fontFamily: "'Noto Sans JP:Regular'" }}>
+      <span className="text-[#e80004] w-[8px]">*</span>
+      <span className="text-[#3d4b56] w-[80px]">パスワード</span>
+    </div>
+    <input
+      type="password"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+      placeholder="パスワードの入力"
+      className="bg-white border border-[#e0e4eb] rounded-[6px] flex-1 min-w-0 px-[16px] py-[12px] text-[16px] text-[#3d4b56] placeholder-[#8a8a8a]"
+      style={{ fontFamily: "'Noto Sans JP:Regular'" }}
+    />
+  </div>
+</div>
       </div>
       <div className="flex flex-col gap-[24px] items-center px-[10px] pt-[60px] pb-[40px]">
         <PrimaryButton label="ログイン" onClick={onLogin} />
